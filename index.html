@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Berry Belle Studios presents The Berry Bunch — a colorful puzzle-game world filled with berry heroes, playful lore, and a handcrafted visual identity.">
+  <meta name="theme-color" content="#7f3cff">
+  <title>Berry Belle Studios | The Berry Bunch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Berry Belle Studios home">
+      <span class="brand-mark" aria-hidden="true">🍓</span>
+      <span class="brand-copy">
+        <strong>Berry Belle</strong>
+        <small>Studios</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#story">Studio</a>
+      <a href="#gameplay">Gameplay</a>
+      <a href="#world">Berry World</a>
+      <a href="#characters">Characters</a>
+      <a href="#lore">Lore</a>
+      <a class="nav-cta" href="#future">What's Next</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" aria-labelledby="heroTitle">
+      <div class="hero-confetti" aria-hidden="true">
+        <span>✦</span><span>●</span><span>♥</span><span>✿</span><span>✦</span><span>●</span>
+      </div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>Berry Belle Studios</span> presents</p>
+        <h1 id="heroTitle">
+          Welcome to<br>
+          <span class="gradient-text">The Berry Bunch</span>
+        </h1>
+        <p class="hero-lede">
+          A bright, bouncy puzzle world where every color has a personality, every region has a story, and six berry friends keep the whole realm bursting with energy.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#world">Explore the Berry World <span aria-hidden="true">→</span></a>
+          <a class="button button-soft" href="#gameplay">Watch the Game <span aria-hidden="true">▶</span></a>
+        </div>
+        <div class="hero-pills" aria-label="Project highlights">
+          <span>🎮 Puzzle Adventure</span>
+          <span>🎨 Character Branding</span>
+          <span>🌈 Color-Theory Personalities</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="The Berry Bunch mascot collage">
+        <div class="hero-orbit orbit-a"></div>
+        <div class="hero-orbit orbit-b"></div>
+        <figure class="hero-card hero-card-main">
+          <img src="assets/characters/ruby-razzleberry.jpg" alt="Ruby Razzleberry, a bright red berry mascot raising her fist">
+        </figure>
+        <figure class="hero-card hero-card-blue">
+          <img src="assets/characters/bubbly-bluebelle.jpg" alt="Bubbly Bluebelle, a blue berry mascot reading a book">
+        </figure>
+        <figure class="hero-card hero-card-yellow">
+          <img src="assets/characters/sunny-goldenberry.jpg" alt="Sunny Goldenberry, a joyful yellow berry mascot">
+        </figure>
+        <div class="hero-sticker sticker-one">POP!</div>
+        <div class="hero-sticker sticker-two">MATCH!</div>
+        <div class="hero-sticker sticker-three">PLAY!</div>
+      </div>
+
+      <a class="scroll-cue" href="#story" aria-label="Scroll to studio story">
+        <span>Scroll into the story</span>
+        <i aria-hidden="true">↓</i>
+      </a>
+    </section>
+
+    <section class="story section-shell" id="story" aria-labelledby="storyTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Two creative lanes. One shared universe.</p>
+        <h2 id="storyTitle">Berry Belle Studios</h2>
+        <p>
+          The studio brings game design and visual storytelling together: one side builds the playable experience, while the other shapes the identity, characters, website, and world around it.
+        </p>
+      </div>
+
+      <div class="studio-grid">
+        <article class="studio-card studio-card-game reveal">
+          <span class="card-icon" aria-hidden="true">🎮</span>
+          <p class="mini-label">Game Design + Development</p>
+          <h3>Christine's Lane</h3>
+          <p>Gameplay systems, level flow, puzzle mechanics, interactions, playability, and the foundation of the game itself.</p>
+          <div class="skill-chips">
+            <span>Levels</span><span>Mechanics</span><span>Balancing</span><span>Game Feel</span>
+          </div>
+        </article>
+
+        <div class="studio-plus reveal" aria-hidden="true">
+          <span>+</span>
+          <small>creative collision</small>
+        </div>
+
+        <article class="studio-card studio-card-design reveal">
+          <span class="card-icon" aria-hidden="true">🎨</span>
+          <p class="mini-label">Graphic Design + Brand + Web</p>
+          <h3>Danielle's Lane</h3>
+          <p>Visual identity, mascot personalities, color systems, promotional design, UX/UI thinking, web design, and launch presentation.</p>
+          <div class="skill-chips">
+            <span>Branding</span><span>UX/UI</span><span>Web</span><span>Promotion</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="studio-statement reveal">
+        <span class="statement-star" aria-hidden="true">✦</span>
+        <p><strong>Berry Belle Studios</strong> is the bridge between the game people play and the world they remember.</p>
+        <span class="statement-star" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <section class="gameplay section-shell" id="gameplay" aria-labelledby="gameplayTitle">
+      <div class="gameplay-copy reveal">
+        <p class="eyebrow">Play-tested. Screen-recorded. Already alive.</p>
+        <h2 id="gameplayTitle">See the Game in Motion</h2>
+        <p>
+          The Berry Bunch begins as a colorful match-and-pop puzzle experience with clear goals, limited moves, satisfying cascades, progression, and a cheerful world that is ready to grow.
+        </p>
+
+        <div class="gameplay-features">
+          <div><strong>01</strong><span>Match colorful pieces</span></div>
+          <div><strong>02</strong><span>Trigger satisfying cascades</span></div>
+          <div><strong>03</strong><span>Complete each level goal</span></div>
+          <div><strong>04</strong><span>Travel deeper into the Berry Realm</span></div>
+        </div>
+      </div>
+
+      <div class="video-shell reveal">
+        <div class="video-topbar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <strong>PLAYTEST_01.mp4</strong>
+          <span class="live-badge">PLAYTEST</span>
+        </div>
+        <video controls preload="metadata" poster="assets/media/gameplay-poster.jpg">
+          <source src="assets/media/gameplay-demo.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+        <p class="video-caption">Actual play-test footage — compressed for the website.</p>
+      </div>
+    </section>
+
+    <section class="world section-shell" id="world" aria-labelledby="worldTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A continuous story map inspired by playful puzzle worlds</p>
+        <h2 id="worldTitle">Travel the Berry Realm</h2>
+        <p>
+          Instead of separate pages, the website flows like one long adventure. Each stop on the Berry Trail belongs to a different member of the Bunch — click a location to reveal its lore.
+        </p>
+      </div>
+
+      <div class="world-layout">
+        <div class="map-card reveal" aria-label="Interactive Berry Realm map">
+          <div class="map-sky" aria-hidden="true"><span></span><span></span><span></span></div>
+          <svg class="berry-path" viewBox="0 0 500 940" preserveAspectRatio="none" aria-hidden="true">
+            <path class="path-shadow" d="M110 55 C390 125 385 245 175 300 C35 340 70 455 300 495 C470 525 455 645 240 685 C70 720 80 840 380 900" />
+            <path class="path-line" d="M110 55 C390 125 385 245 175 300 C35 340 70 455 300 495 C470 525 455 645 240 685 C70 720 80 840 380 900" />
+          </svg>
+
+          <button class="map-node node-ruby active" type="button" data-character="ruby" aria-pressed="true">
+            <span class="node-number">1</span>
+            <img src="assets/characters/ruby-razzleberry.jpg" alt="">
+            <strong>Razzle Ridge</strong>
+          </button>
+          <button class="map-node node-blue" type="button" data-character="blue" aria-pressed="false">
+            <span class="node-number">2</span>
+            <img src="assets/characters/bubbly-bluebelle.jpg" alt="">
+            <strong>Bluebelle Bay</strong>
+          </button>
+          <button class="map-node node-plum" type="button" data-character="plum" aria-pressed="false">
+            <span class="node-number">3</span>
+            <img src="assets/characters/plumbleberry.jpg" alt="">
+            <strong>Moonplum Hollow</strong>
+          </button>
+          <button class="map-node node-green" type="button" data-character="green" aria-pressed="false">
+            <span class="node-number">4</span>
+            <img src="assets/characters/gooseberry-giggles.jpg" alt="">
+            <strong>Giggle Grove</strong>
+          </button>
+          <button class="map-node node-sunny" type="button" data-character="sunny" aria-pressed="false">
+            <span class="node-number">5</span>
+            <img src="assets/characters/sunny-goldenberry.jpg" alt="">
+            <strong>Golden Glow Gardens</strong>
+          </button>
+          <button class="map-node node-orange" type="button" data-character="orange" aria-pressed="false">
+            <span class="node-number">6</span>
+            <img src="assets/characters/tangerberry.jpg" alt="">
+            <strong>Tangerine Trail</strong>
+          </button>
+        </div>
+
+        <aside class="lore-panel reveal" id="lorePanel" aria-live="polite">
+          <div class="lore-panel-top">
+            <span class="lore-kicker" id="loreKicker">Stop 01 · Crimson Highlands</span>
+            <span class="lore-symbol" id="loreSymbol" aria-hidden="true">❤️</span>
+          </div>
+          <h3 id="loreName">Razzle Ridge</h3>
+          <p class="lore-character" id="loreCharacter">Home of Ruby Razzleberry</p>
+          <p id="loreDescription">
+            A fizzy red ridge where berry vines curl around warm crystal cliffs. Ruby keeps the region's Heart Spark burning bright, turning courage and passion into bursts of energy that power the trail ahead.
+          </p>
+          <div class="lore-details">
+            <div><span>Vibe</span><strong id="loreVibe">Bold + electric</strong></div>
+            <div><span>Landmark</span><strong id="loreLandmark">The Heartberry Beacon</strong></div>
+          </div>
+          <blockquote id="loreQuote">“If the trail looks impossible, that's usually where the fun starts.”</blockquote>
+        </aside>
+      </div>
+    </section>
+
+    <section class="characters section-shell" id="characters" aria-labelledby="charactersTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Six colors. Six personalities. One lovable crew.</p>
+        <h2 id="charactersTitle">Meet the Berry Bunch</h2>
+        <p>Each mascot's personality grows from the emotional associations of their signature color, then becomes part of the wider game world.</p>
+      </div>
+
+      <div class="character-grid">
+        <article class="character-card ruby reveal" tabindex="0">
+          <div class="character-image"><img src="assets/characters/ruby-razzleberry.jpg" alt="Ruby Razzleberry"></div>
+          <div class="character-copy">
+            <span class="character-color">❤️ Red · Passion</span>
+            <h3>Ruby Razzleberry</h3>
+            <p>Bold, excitable, and passionate. Ruby charges into every challenge first and turns nervous energy into fearless momentum.</p>
+            <span class="location-tag">📍 Razzle Ridge</span>
+          </div>
+        </article>
+
+        <article class="character-card blue reveal" tabindex="0">
+          <div class="character-image"><img src="assets/characters/bubbly-bluebelle.jpg" alt="Bubbly Bluebelle"></div>
+          <div class="character-copy">
+            <span class="character-color">💙 Blue · Trust</span>
+            <h3>Bubbly Bluebelle</h3>
+            <p>Calm, intelligent, and sweet. Bluebelle is the thoughtful planner who loves a good book and notices clues everyone else misses.</p>
+            <span class="location-tag">📍 Bluebelle Bay</span>
+          </div>
+        </article>
+
+        <article class="character-card plum reveal" tabindex="0">
+          <div class="character-image"><img src="assets/characters/plumbleberry.jpg" alt="Plumbleberry"></div>
+          <div class="character-copy">
+            <span class="character-color">💜 Purple · Mystery</span>
+            <h3>Plumbleberry</h3>
+            <p>Shy, sensitive, and mysterious. Plumbleberry hears the quiet magic in the world and knows the secrets hidden between levels.</p>
+            <span class="location-tag">📍 Moonplum Hollow</span>
+          </div>
+        </article>
+
+        <article class="character-card green reveal" tabindex="0">
+          <div class="character-image"><img src="assets/characters/gooseberry-giggles.jpg" alt="Gooseberry Giggles"></div>
+          <div class="character-copy">
+            <span class="character-color">💚 Green · Energy</span>
+            <h3>Gooseberry Giggles</h3>
+            <p>Goofy, energetic, and playful. Gooseberry turns every detour into a joke, every bounce into a shortcut, and every level into a party.</p>
+            <span class="location-tag">📍 Giggle Grove</span>
+          </div>
+        </article>
+
+        <article class="character-card sunny reveal" tabindex="0">
+          <div class="character-image"><img src="assets/characters/sunny-goldenberry.jpg" alt="Sunny Goldenberry"></div>
+          <div class="character-copy">
+            <span class="character-color">💛 Yellow · Joy</span>
+            <h3>Sunny Goldenberry</h3>
+            <p>Optimistic, bubbly, and joyful. Sunny is the group's emotional sunshine, always finding one more reason to keep moving forward.</p>
+            <span class="location-tag">📍 Golden Glow Gardens</span>
+          </div>
+        </article>
+
+        <article class="character-card orange reveal" tabindex="0">
+          <div class="character-image"><img src="assets/characters/tangerberry.jpg" alt="Tangerberry"></div>
+          <div class="character-copy">
+            <span class="character-color">🧡 Orange · Creativity</span>
+            <h3>Tangerberry</h3>
+            <p>Creative, friendly, and adventurous. Tangerberry sketches strange ideas, builds clever solutions, and happily follows inspiration off the map.</p>
+            <span class="location-tag">📍 Tangerine Trail</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="lore section-shell" id="lore" aria-labelledby="loreTitle">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The story behind the popping</p>
+        <h2 id="loreTitle">The Heartberry Legend</h2>
+        <p>A simple expandable lore foundation gives every puzzle region a reason to exist — and leaves room for new worlds, villains, helpers, and seasonal chapters later.</p>
+      </div>
+
+      <div class="lore-timeline">
+        <article class="lore-chapter reveal">
+          <span class="chapter-number">01</span>
+          <div>
+            <p class="mini-label">Before the game</p>
+            <h3>The Heartberry Bloom</h3>
+            <p>At the center of the Berry Realm grew one enormous magical bloom called the Heartberry. Its six colorful sparks kept every region bright, playful, and connected.</p>
+          </div>
+        </article>
+
+        <article class="lore-chapter reveal">
+          <span class="chapter-number">02</span>
+          <div>
+            <p class="mini-label">The problem</p>
+            <h3>The Great Scatter</h3>
+            <p>One wild storm of puzzle magic knocked the six sparks loose. They bounced across the realm, tangling paths and scrambling the energy that keeps each region in balance.</p>
+          </div>
+        </article>
+
+        <article class="lore-chapter reveal">
+          <span class="chapter-number">03</span>
+          <div>
+            <p class="mini-label">The adventure</p>
+            <h3>The Berry Trail</h3>
+            <p>The Berry Bunch now travels from home to home, clearing colorful puzzle tangles, restoring local landmarks, and reuniting the sparks one region at a time.</p>
+          </div>
+        </article>
+
+        <article class="lore-chapter reveal">
+          <span class="chapter-number">04</span>
+          <div>
+            <p class="mini-label">The bigger mystery</p>
+            <h3>Why Did the Storm Begin?</h3>
+            <p>Plumbleberry suspects the Great Scatter was not an accident. Strange purple footprints keep appearing beyond the known map — setting up future chapters without locking the story into one direction.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-lab section-shell" aria-labelledby="brandTitle">
+      <div class="brand-lab-card reveal">
+        <div class="brand-lab-copy">
+          <p class="eyebrow">Where graphic design meets game worldbuilding</p>
+          <h2 id="brandTitle">Built to Feel Like a Brand, Not Just a Level Screen</h2>
+          <p>The website expands the playable project into a visual system that can grow across social posts, game-store graphics, promotional art, character spotlights, and future studio releases.</p>
+        </div>
+        <div class="palette" aria-label="Berry Bunch color palette">
+          <span style="--swatch:#ff3f57"><i>#FF3F57</i></span>
+          <span style="--swatch:#4a8cff"><i>#4A8CFF</i></span>
+          <span style="--swatch:#8c4ed6"><i>#8C4ED6</i></span>
+          <span style="--swatch:#83bf3f"><i>#83BF3F</i></span>
+          <span style="--swatch:#ffd447"><i>#FFD447</i></span>
+          <span style="--swatch:#ff8a32"><i>#FF8A32</i></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="future section-shell" id="future" aria-labelledby="futureTitle">
+      <div class="future-panel reveal">
+        <p class="eyebrow">The next chapter</p>
+        <h2 id="futureTitle">From Play-Test to Public World</h2>
+        <p class="future-lede">The Berry Bunch can keep growing in layers — without trying to build everything at once.</p>
+
+        <div class="future-steps">
+          <div><span>01</span><strong>Polish the core game</strong><p>Keep play-testing, tune levels, and lock the most satisfying mechanics.</p></div>
+          <div><span>02</span><strong>Finish the visual system</strong><p>Refine the logo, mascot poses, UI style, store graphics, and brand guidelines.</p></div>
+          <div><span>03</span><strong>Build the audience</strong><p>Use the website, gameplay clips, character reveals, and project updates as the public home base.</p></div>
+          <div><span>04</span><strong>Prepare the release</strong><p>Package the final build and its launch materials for the chosen distribution platform.</p></div>
+        </div>
+
+        <a class="button button-primary future-button" href="#top">Back to the Berry Beginning ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="brand brand-footer" href="#top">
+        <span class="brand-mark" aria-hidden="true">🍓</span>
+        <span class="brand-copy"><strong>Berry Belle</strong><small>Studios</small></span>
+      </a>
+      <p>Game design meets graphic design in one colorful little universe.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#gameplay">Gameplay</a>
+      <a href="#world">World</a>
+      <a href="#characters">Characters</a>
+      <a href="#lore">Lore</a>
+    </div>
+    <p class="copyright">© <span id="year"></span> Berry Belle Studios · The Berry Bunch</p>
+  </footer>
+</body>
+</html>
